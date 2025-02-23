@@ -1,0 +1,53 @@
+@import '@fontsource/inter/index.css';
+
+// Bold Orange & White Theme Colors
+$primary-color: #ff6700; // Fiery tangerine
+$secondary-color: #d84315; // Deep spicy orange
+$background-color: #f9f9f9; // Crisp light gray-white
+$surface-color: #ffffff; // Pure white for cards and UI
+$text-color: #1e1e1e; // Soft black
+$border-color: #e0e0e0; // Light gray for dividers
+
+// Feedback Colors
+$success-color: #2ecc71; // Emerald green
+$warning-color: #ffb300; // Golden amber
+$error-color: #c62828; // Deep red
+
+// Shadow & Elevation
+$box-shadow-light: 0px 2px 6px rgba(0, 0, 0, 0.07);
+$box-shadow-medium: 0px 4px 10px rgba(0, 0, 0, 0.12);
+$box-shadow-heavy: 0px 6px 14px rgba(0, 0, 0, 0.18);
+
+// Shadow & Elevation
+$box-shadow-light-dark: 0px 2px 6px rgba(255, 255, 255, 0.07);
+$box-shadow-medium-dark: 0px 4px 10px rgba(255, 255, 255, 0.12);
+$box-shadow-heavy-dark: 0px 6px 14px rgba(255, 255, 255, 0.18);
+
+$button-dark: black;
+
+// 🏗️ Spacing & Layout
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// 🅰️ Typography
+$font-family: 'Inter', sans-serif;
+$font-size-base: 16px;
+$font-size-sm: 14px;
+$font-size-lg: 20px;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// 📏 Breakpoints (for responsive design)
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+
+// 🔄 Transitions
+$transition-fast: 0.2s ease-in-out;
+$transition-normal: 0.3s ease-in-out;
+$transition-slow: 0.5s ease-in-out;

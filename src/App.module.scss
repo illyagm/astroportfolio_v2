@@ -1,0 +1,30 @@
+.grid {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.textblock {
+  width: 460px;
+  margin: 26px 0 26px;
+}
+
+.imgContainer {
+  z-index: 0;
+  position: absolute;
+  inset: 0%;
+}

@@ -1,0 +1,41 @@
+.about-container {
+  background-color: var(--content-container);
+  line-height: 26px;
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  .content-image {
+    margin: 20px 60px;
+    border-radius: 1%;
+  }
+}
+
+.floated {
+  float: left;
+  width: 150px;
+  background: red;
+}
+
+.container {
+  text-align: left;
+
+  display: block;
+  width: auto;
+  place-items: center;
+}
+
+.titleText {
+  font-size: 18px;
+  text-align: center;
+}
+
+.content-title {
+  line-height: 42px;
+}

@@ -1,0 +1,53 @@
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.3s;
+
+  &.primary {
+    background: $primary-color;
+    color: white;
+    &:hover {
+      background: darken($primary-color, 10%);
+    }
+  }
+
+  &.secondary {
+    background: $secondary-color;
+    color: white;
+    &:hover {
+      background: darken($secondary-color, 10%);
+    }
+  }
+  &.dark {
+    background: $button-dark;
+    color: white;
+    &:hover {
+      background: darken($secondary-color, 10%);
+    }
+  }
+
+  &.danger {
+    background: $error-color;
+    color: white;
+    &:hover {
+      background: darken($error-color, 10%);
+    }
+  }
+
+  &.halfsize {
+    width: 50%;
+  }
+
+  &.fullsize {
+    width: 100%;
+  }
+
+  &:disabled {
+    background: $border-color;
+    cursor: not-allowed;
+  }
+}

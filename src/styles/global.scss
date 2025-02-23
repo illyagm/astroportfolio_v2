@@ -1,0 +1,92 @@
+@import './variables';
+
+* {
+  font-family: $font-family;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: 0;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE, Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+:root {
+  --primary-color: #3b82f6; // A vibrant blue for primary actions
+  --secondary-color: #10b981; // A fresh teal for accents
+  --background-color: #f9fafb; // A near-white, soft background
+  --surface-color: #ffffff; // Crisp white surfaces
+  --text-color: #1f2937; // Dark blue-gray for readability
+  --border-color: #e5e7eb; // Subtle light gray borders
+  --card-color: #ffffff; // Clean card backgrounds
+  --content-container: #ffffff;
+  --box-shadow: $box-shadow-light;
+  --wrapper-clip: '400px';
+}
+
+[data-theme='dark'] {
+  --primary-color: #60a5fa; // Lighter blue suitable for dark mode
+  --secondary-color: #34d399; // Softer teal accent in dark mode
+  --background-color: #0f131a; // Deep blue-gray for a modern dark look
+  --surface-color: #374151; // Slightly lighter surface for contrast
+  --text-color: #f9fafb; // Light text for legibility on dark backgrounds
+  --border-color: #212833; // Muted gray borders
+  --card-color: #1f2937; // Cards matching the background, or you can use #374151 for distinction
+  --content-container: #11161d;
+  --box-shadow: $box-shadow-dark;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition:
+    background 0.1s ease-in-out,
+    color 0.1s ease-in-out;
+}
+
+:root {
+  --background-image: url('../assets/Untitled.png');
+  transition:
+    background 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+[data-theme='dark'] {
+  --background-image: url('../assets/Untitled.png');
+  transition:
+    background 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  }
+}

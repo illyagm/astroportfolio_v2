@@ -1,0 +1,42 @@
+.presentationHeader {
+  width: 100%;
+  height: 50vh;
+}
+
+.container {
+  display: 'flex';
+  justify-content: 'center';
+  transition: 'width 0.3s ease-in-out';
+  text-align: left;
+  padding: 2rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  margin-top: calc(80vh - 315px);
+  position: sticky;
+  background-color: var(--content-container);
+  place-items: center;
+}
+
+.contentContainer {
+  position: relative;
+  background: var(--background-image);
+  background-position: center;
+  background-size: 100vh;
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+.titleText {
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  text-shadow:
+    -1px -1px 0 rgba(0, 0, 0, 0.2),
+    1px -1px 0 rgba(0, 0, 0, 0.2),
+    -1px 1px 0 rgba(0, 0, 0, 0.2),
+    1px 1px 0 rgba(0, 0, 0, 0.2);
+}

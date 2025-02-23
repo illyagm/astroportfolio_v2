@@ -1,0 +1,45 @@
+.about-container {
+  background-color: var(--content-container);
+  line-height: 26px;
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  .content-image {
+    margin: 22px 0 22px;
+    border-radius: 1%;
+  }
+}
+
+.content-title {
+  line-height: 42px;
+}
+
+.floated {
+  float: left;
+  width: 150px;
+  background: red;
+}
+
+.container {
+  text-align: left;
+  padding: 2rem;
+  display: block;
+  width: auto;
+  place-items: center;
+}
+
+.titleText {
+  font-size: 18px;
+  text-align: center;
+}
+
+.productLink {
+  color: var(--text-color);
+}
