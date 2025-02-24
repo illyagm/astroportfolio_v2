@@ -10,7 +10,7 @@ import AnimateDiv from '@components/AnimateDiv';
 
 const Home: React.FC = () => {
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
-  const [width, setWidth] = useState(70);
+  const [width, setWidth] = useState(80);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
       } else if (currentScrollY < lastScrollY) {
         console.log('up');
         // Scrolling up, decrease width
-        setWidth((prevWidth) => Math.max(prevWidth - 0.6, 70)); // Decrease width but not below 60%
+        setWidth((prevWidth) => Math.max(prevWidth - 0.6, 80)); // Decrease width but not below 60%
       }
       console.log(width);
       setLastScrollY(currentScrollY); // Corrected: update with current scroll position
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
         <div
           className={homeStyles.container}
           style={{
-            width: width + '%',
+            width: width + 'vw',
             borderRadius: width === 100 ? 0 : '26px',
           }}
         >
