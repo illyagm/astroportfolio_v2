@@ -1,11 +1,9 @@
 import { create } from 'zustand';
 import { GraphQLClient, gql } from 'graphql-request';
 
-const graphcms = new GraphQLClient(import.meta.env.HYGRAPH_PROJECT_API_URL, {
-  headers: {
-    Authorization: `Bearer ${import.meta.env.HYGRAPH_PUBLIC_PROD_TOKEN_POSTS}`,
-  },
-});
+const graphcms = new GraphQLClient(
+  import.meta.env.VITE_HYGRAPH_PROJECT_API_URL,
+);
 
 const QUERY = gql`
   {
