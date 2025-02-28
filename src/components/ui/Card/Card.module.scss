@@ -20,6 +20,14 @@
   }
 }
 
+.galleryCard {
+  margin: 24px;
+  .card {
+    min-height: 300px; /* Ensures a proper aspect ratio */
+    min-width: 360px;
+  }
+}
+
 .hasBackground {
   background-size: cover;
   background-position: center;

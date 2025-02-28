@@ -1,5 +1,6 @@
 declare const classNames: {
   readonly card: "card";
+  readonly galleryCard: "galleryCard";
   readonly hasBackground: "hasBackground";
   readonly overlay: "overlay";
   readonly header: "header";

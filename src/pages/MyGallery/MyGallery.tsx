@@ -3,6 +3,7 @@ import { usePostsStore } from '@store/posts';
 import React, { useEffect, useState } from 'react';
 import styles from 'App.module.scss';
 import galleryStyles from './MyGallery.module.scss';
+import cardStyles from '../../components/ui/Card/Card.module.scss';
 import classNames from 'classnames';
 import Button from '@components/ui/Button';
 
@@ -29,7 +30,7 @@ const MyGallery: React.FC = () => {
       {posts.length === 0 ? <p>Loading posts...</p> : <></>}
       <div className={classNames(galleryStyles.galleryContainer)}>
         {posts.map((post) => (
-          <div className={galleryStyles.galleryCard}>
+          <div className={cardStyles.galleryCard}>
             <Card backgroundImage={post.imgUrl} footer={post.title} />
           </div>
         ))}
