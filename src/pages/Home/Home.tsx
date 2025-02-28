@@ -16,15 +16,12 @@ const Home: React.FC = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > lastScrollY) {
-        console.log('down');
         // Scrolling down, increase width
         setWidth((prevWidth) => Math.min(prevWidth + 0.6, 100));
       } else if (currentScrollY < lastScrollY) {
-        console.log('up');
         // Scrolling up, decrease width
         setWidth((prevWidth) => Math.max(prevWidth - 0.6, 80)); // Decrease width but not below 60%
       }
-      console.log(width);
       setLastScrollY(currentScrollY); // Corrected: update with current scroll position
     };
 
@@ -42,41 +39,54 @@ const Home: React.FC = () => {
           <h1>Urban Astrophotography</h1>
         </div>
       </div>
-      <AnimateDiv>
-        <div
-          className={homeStyles.container}
-          style={{
-            width: width + 'vw',
-            borderRadius: width === 100 ? 0 : '26px',
-          }}
-        >
-          <Card
-            nostyle={true}
-            content={
-              <div className={classNames(appStyles.grid3)}>
-                <Card backgroundImage={eagleNebula} />
-                <Card backgroundImage={horsehead} />
-                <Card backgroundImage={soulNebula} />
-              </div>
-            }
-          />
-          <Card
-            nostyle={true}
-            content={
-              <h1>
-                <q>
-                  <i>
-                    The nitrogen in our DNA, the calcium in our teeth, the iron
-                    in our blood, the carbon in our apple pies were made in the
-                    interiors of collapsing stars. We are made of starstuff.
-                  </i>
-                </q>
-                <p> ― Carl Sagan, Cosmos</p>
-              </h1>
-            }
-          />
-        </div>
-      </AnimateDiv>
+      <div>
+        <AnimateDiv>
+          <div
+            className={homeStyles.container}
+            style={{
+              width: width + 'vw',
+              borderRadius: width === 100 ? 0 : '26px',
+            }}
+          >
+            <Card
+              nostyle={true}
+              content={
+                <>
+                  <div
+                    className={classNames(
+                      appStyles.grid3,
+                      homeStyles.cardPresentationDesktop,
+                    )}
+                  >
+                    <Card backgroundImage={eagleNebula} />
+                    <Card backgroundImage={horsehead} />
+                    <Card backgroundImage={soulNebula} />
+                  </div>
+                  <div className={homeStyles.cardPresentationMobile}>
+                    <Card backgroundImage={eagleNebula} />
+                  </div>
+                </>
+              }
+            />
+            <Card
+              nostyle={true}
+              content={
+                <h1 className={homeStyles.textQuote}>
+                  <q>
+                    <i>
+                      The nitrogen in our DNA, the calcium in our teeth, the
+                      iron in our blood, the carbon in our apple pies were made
+                      in the interiors of collapsing stars. We are made of
+                      starstuff.
+                    </i>
+                  </q>
+                  <p> ― Carl Sagan, Cosmos</p>
+                </h1>
+              }
+            />
+          </div>
+        </AnimateDiv>
+      </div>
     </>
   );
 };

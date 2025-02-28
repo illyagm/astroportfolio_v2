@@ -40,3 +40,34 @@
     -1px 1px 0 rgba(0, 0, 0, 0.2),
     1px 1px 0 rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: $breakpoint-sm) {
+  .cardPresentationDesktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: $breakpoint-sm) {
+  .cardPresentationMobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .cardPresentationMobile {
+    div {
+      min-height: 14vw !important;
+      min-width: 50vw !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .titleText {
+    text-align: justify;
+    font-size: 20px;
+  }
+  .textQuote {
+    font-size: 16px;
+  }
+}

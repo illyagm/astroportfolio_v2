@@ -1,8 +1,10 @@
 declare const classNames: {
   readonly header: "header";
+  readonly title: "title";
   readonly nav: "nav";
   readonly navWrapper: "navWrapper";
   readonly navLink: "navLink";
-  readonly title: "title";
+  readonly hamburger: "hamburger";
+  readonly open: "open";
 };
 export = classNames;
