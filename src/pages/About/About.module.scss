@@ -17,6 +17,17 @@
   }
 }
 
+@media (max-width: $breakpoint-lg) {
+  .content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 46px;
+    .content-image {
+      display: none;
+    }
+  }
+}
+
 .floated {
   float: left;
   width: 150px;
