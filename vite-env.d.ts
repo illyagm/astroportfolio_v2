@@ -1,9 +1,9 @@
 interface ImportMetaEnv {
-  readonly VITE_HYGRAPH_PROJECT_API_URL: string;
+  readonly HYGRAPH_PROJECT_API_URL: string;
 }
 
 interface ImportMetaEnv {
-  readonly VITE_HYGRAPH_PUBLIC_PROD_TOKEN_POSTS: string;
+  readonly HYGRAPH_PUBLIC_PROD_TOKEN_POSTS: string;
 }
 
 interface ImportMeta {
