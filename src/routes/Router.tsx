@@ -11,6 +11,7 @@ import Home from '../pages/Home/Home';
 import About from '../pages/About/About';
 import MyGear from '../pages/MyGear/MyGear';
 import PageTransition from '@components/PageTransition';
+import MyGallery from 'pages/MyGallery/MyGallery';
 
 const AppRouter: React.FC = () => {
   const AnimatedRoutes = () => {
@@ -27,14 +28,14 @@ const AppRouter: React.FC = () => {
               </PageTransition>
             }
           />
-          {/* <Route
+          <Route
             path="/gallery"
             element={
               <PageTransition>
-                <Gallery />
+                <MyGallery />
               </PageTransition>
             }
-          /> */}
+          />
           <Route
             path="/about"
             element={
