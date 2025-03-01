@@ -7,10 +7,15 @@ import horsehead from '../../assets/horsehead.jpg';
 import soulNebula from '../../assets/soulNebula.jpg';
 import eagleNebula from '../../assets/eagleNebula.png';
 import AnimateDiv from '@components/AnimateDiv';
+import { usePostsStore } from '@store/posts';
+import BlogCard from '@components/Blog/BlogCard';
 
 const Home: React.FC = () => {
   const [lastScrollY, setLastScrollY] = useState(window.scrollY);
   const [width, setWidth] = useState(80);
+  const { posts } = usePostsStore();
+
+  console.log(posts[0]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -87,6 +92,17 @@ const Home: React.FC = () => {
           </div>
         </AnimateDiv>
       </div>
+
+      <h1 className={appStyles.blogTitle}>My latest captures</h1>
+      {posts.slice(0, 4).map((post, index) => (
+        <BlogCard
+          key={index}
+          image={post.imgUrl}
+          title={post.title}
+          description={post.description}
+          date={post.createdAt}
+        />
+      ))}
     </>
   );
 };

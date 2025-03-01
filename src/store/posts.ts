@@ -10,12 +10,14 @@ const QUERY = gql`
     posts(orderBy: createdAt_DESC, first: 15) {
       id
       title
+      createdAt
       description {
         html
       }
       author
       slug
       imgUrl
+      createdAt
     }
   }
 `;
@@ -24,6 +26,7 @@ type Post = {
   id: string;
   title: string;
   description: { html: string };
+  createdAt: Date;
   author: string;
   slug: string;
   imgUrl: string;

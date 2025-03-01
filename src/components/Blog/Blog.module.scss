@@ -1,0 +1,31 @@
+.blogTitle {
+  margin: 0;
+}
+
+.blogCard {
+  display: flex;
+  flex-direction: row;
+  padding: 0 14vw 2vw;
+
+  @media (max-width: $breakpoint-sm) {
+    flex-direction: column;
+  }
+}
+
+.blogCardContent {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  max-width: 30vw;
+
+  @media (max-width: $breakpoint-sm) {
+    max-width: 100vw;
+    padding: 4vw 0;
+  }
+
+  .blogDatePublished {
+    font-size: 14px;
+    font-style: italic;
+    color: var(--secondary-color);
+  }
+}

@@ -5,5 +5,6 @@ declare const classNames: {
   readonly grid4: "grid4";
   readonly textblock: "textblock";
   readonly imgContainer: "imgContainer";
+  readonly blogTitle: "blogTitle";
 };
 export = classNames;

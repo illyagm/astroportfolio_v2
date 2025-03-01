@@ -5,7 +5,7 @@ import cn from 'classnames';
 type ButtonProps = {
   children: React.ReactNode;
   onClick?: () => void;
-  variant?: 'primary' | 'secondary' | 'dark' | 'danger';
+  variant?: 'primary' | 'secondary' | 'dark' | 'danger' | 'inline';
   size?: 'halfsize' | 'fullsize';
   disabled?: boolean;
 };

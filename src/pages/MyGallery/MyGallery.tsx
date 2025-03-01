@@ -8,11 +8,7 @@ import classNames from 'classnames';
 import Button from '@components/ui/Button';
 
 const MyGallery: React.FC = () => {
-  const { posts, fetchPosts } = usePostsStore();
-
-  useEffect(() => {
-    if (posts.length === 0) fetchPosts();
-  }, [fetchPosts, posts.length]); // Dependency array should track lastScrollY changes
+  const { posts } = usePostsStore();
 
   return (
     <>
