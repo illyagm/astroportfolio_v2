@@ -30,7 +30,9 @@ Astrophotography portfolio built with Next.js. Designed and focused on one of my
 <img width="1901" height="900" alt="image" src="https://github.com/user-attachments/assets/e7f9e7f1-7b7c-43d2-be78-de8538554cf8" />
 
 **Light/Dark mode**
+
 <img width="411" height="58" alt="image" src="https://github.com/user-attachments/assets/ff7f5c24-dfb7-4945-a8bb-99ae020ab1dc" />
+
 <img width="424" height="53" alt="image" src="https://github.com/user-attachments/assets/49bd9274-f7ee-4aa9-8454-286cbb404ac5" />
 
 **For a more detailed view, please visit the website:** https://www.astroportfolio.eu/
