@@ -1,28 +1,58 @@
-1️⃣ Install Core Dependencies
-Run the following command to install the required packages:
+# Astro Portfolio v2.0
 
-npm install react react-dom zustand
+Astrophotography portfolio built with Next.js. Designed and focused on one of my favorite hobbies, showcasing deep-sky images with a clean UI and smooth transitions.
+
+## Features
+
+* Gallery of astrophotography projects
+* Responsive and minimal layout
+* Light/Dark mode :)
+* Image optimization for performance
+* Optional integration with analytics
+
+## Stack
+
+* **Next.js**
+* **Hygraph** as the content management system
+* **Graphql-request** for content fetching
+* **Vercel* for deployments and analytics
+* **Vercel-sitemap** to improve SEO
+
+## Screenshots
 
 
+## Installation
 
-2️⃣ Install Development Dependencies
-These are needed for TypeScript, SASS support, and a fast development environment:
-
-npm install -D typescript vite @vitejs/plugin-react sass
-
-
-3️⃣ Install Type Definitions
-Ensure proper TypeScript support with:
-
-npm install -D @types/react @types/react-dom
-
-
-4️⃣ Install ESLint & Prettier (Optional, but recommended)
-
-npm install -D eslint eslint-config-prettier eslint-plugin-react eslint-plugin-react-hooks prettier
-
-
-Final Steps
-Once installed, run:
-
+```bash
+git clone https://github.com/illyagm/astroportfolio_v2.git
+cd astroportfolio_v2
+npm install
 npm run dev
+```
+
+## Production build
+
+```bash
+npm run build
+npm start
+```
+
+## Configuration – ENV vars
+
+```
+NEXT_PUBLIC_PROD_TOKEN_POSTS=
+NEXT_PUBLIC_HYGRAPH_PROJECT_API_URL=
+```
+
+## Roadmap
+
+* Improved gallery filtering
+* Lazy-loading
+* Single-project detail view
+* Multi-language support (EN/ES)
+* Marketplace for supporting my work
+* Pagination
+
+## License
+
+MIT
